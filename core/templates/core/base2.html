@@ -1,0 +1,107 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>FB Lite</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="{% static 'core/bootstrap.min.css' %}">
+  <link href="{% static 'core/bootstrap/three/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'core/bootstrap/four/css/bootstrap.min.css' %}" rel="stylesheet">
+
+  <style type="text/css">
+    #bg{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+  }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #3C5A9B; color: white; width:100%">
+  <a class="navbar-brand" href="#"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+
+  <a class="nav-link" href="{% url 'index' %}" style="color: #ffffff ; font-size: 20px; font-weight: bold">FB Lite
+    </a>
+    </li>
+    </ul>
+    <span class="navbar-text">
+    </span> 
+
+  <a class="nav-link" href="{% url 'register' %}" style=" background-color:#6C84B5; color: #ffffff; font-size: 10px; font-weight: bold">Register<span class="sr-only"></span></a>
+    <a style="margin:5px"></a>
+  <a class="nav-link" href="{% url 'index' %}" style="background-color:#6C84B5; color: #ffffff; font-size: 10px; font-weight: bold">Login<span class="sr-only"></span></a>
+
+
+  </div>
+</nav>
+
+<body id="bg" style="background-image: url('{% static "core/images/background.jpg"%}');">
+
+{% block body %}
+{% endblock %}
+
+
+
+
+<!-- Footer -->
+<footer class="fixed-bottom pt-4" style="background-color: #6C84B5;color: black">
+
+  <!-- Footer Links -->
+  <div class="container-fluid text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-6 mt-md-0 mt-3">
+
+        <!-- Content -->
+        <h5 class="text-uppercase">About</h5>
+        <p>This Website is the part of assignment given by RTBANALYTICA.</p>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none pb-3">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+
+        <!-- Links -->
+        <h5 class="text-uppercase">CONTACT</h5>
+
+        <ul class="list-unstyled" style="color:black">
+          <li>
+            <a href="#!" style="color:black">amanr.primary@gmail.com</a>
+          </li>
+          <li>
+            <a href="https://github.com/amanrOnly" style="color:black">GITHUB</a>
+          </li>
+          
+        </ul>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3" style="background-color:#3C5A9B; color:black">© 2022 Copyright:
+    <a href="#" style="color:black"> FB Lite</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
+</body>
+</html>

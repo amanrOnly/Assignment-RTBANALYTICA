@@ -1,0 +1,134 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>FB Lite</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+
+  <link href="{% static 'core/bootstrap/three/css/bootstrap.min.css' %}" rel="stylesheet">
+
+
+<link href="{% static 'core/bootstrap/four/css/bootstrap.min.css' %}" rel="stylesheet">
+ 
+
+
+
+  <style type="text/css">
+    #bg{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+  }
+  </style>
+</head>
+<body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #3C5A9B; color: white">
+        <a class="navbar-brand" href="{% url 'welcome' %}" style="color: white">FB Lite</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="{% url 'welcome' %}" style="color: white">Home <span class="sr-only">(current)</span></a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'feed' %}" style="color: white">My feed</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#"></a>
+              </li>
+
+        
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
+            </li>
+          </ul>
+      
+       <form action="{% url 'search' %}" class="d-flex" method="GET" style="align-content: right;">
+                    <input name="q" class="form-control me-2" type="search" placeholder="FInd A Friend Here" aria-label="Search">
+                    <button class="btn success" type="submit" style="color: white">Search</button>
+                  </form>
+
+                  <ul class="navbar-nav ml-auto ml-md-0">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="{%  url 'logout' %}" style="background-color:#6C84B5; color: white">Logout</a>
+                      </li>
+
+                </ul>
+         
+      
+      
+        </div>
+      </nav>
+
+
+
+<body id="bg">
+
+{% block body %}
+{% endblock %}
+
+<!-- Footer -->
+<footer class="page-footer font-small blue pt-4" style="background-color: #6C84B5;color: black">
+
+  <!-- Footer Links -->
+  <div class="container-fluid text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-6 mt-md-0 mt-3">
+
+        <!-- Content -->
+        <h5 class="text-uppercase">About</h5>
+        <p>This Website is the part of assignment given by RTBANALYTICA.</p>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none pb-3">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+
+        <!-- Links -->
+        <h5 class="text-uppercase">CONTACT</h5>
+
+        <ul class="list-unstyled" style="color:black">
+          <li>
+            <a href="#!" style="color:black">amanr.primary@gmail.com</a>
+          </li>
+          <li>
+            <a href="https://github.com/amanrOnly" style="color:black">GITHUB</a>
+          </li>
+          
+        </ul>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3" style="background-color:#3C5A9B; color:black">© 2022 Copyright:
+    <a href="#" style="color:black"> FB Lite</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
+
+
+</body>
+</html>
