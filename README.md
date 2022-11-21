@@ -7,6 +7,6 @@ SEARCH FRIENDS
 FOLLOW-UNFOLLOW
 MY FEED
 
-Following diagram show the ERD diagram for the same:
+Following shows the ERD diagram for the same:
 ![my_project_visualized](https://user-images.githubusercontent.com/54142628/203134625-7591f4f5-0806-460c-965a-2c71839d8d6a.png)
 
